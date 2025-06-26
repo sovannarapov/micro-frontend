@@ -1,0 +1,8 @@
+{
+  "app.content": "Bonjour",
+  "menu.home": "Heimat",
+  "menu.join": "Rejoindre",
+  "menu.login": "Connexion",
+  "menu.guestbook": "Livre d'or",
+  "message.user": "Bienvenue, {name}!"
+}

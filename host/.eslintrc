@@ -1,0 +1,74 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["@typescript-eslint", "prettier", "vitest", "vite", "vue"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:prettier/recommended",
+    "next/core-web-vitals"
+  ],
+  "settings": {
+    "import/parser": {
+      "typescript-eslint-parser": [".ts", ".vue"]
+    },
+    "import/resolver": {
+      "eslint-import-resolver-typescript": true,
+      "babel-module": {},
+      "node": {
+        "extensions": [".ts", ".vue"]
+      }
+    }
+  },
+  "rules": {
+    "indent": 0,
+    "no-mixed-spaces-and-tabs": 2,
+    "no-case-declarations": 0,
+    "quotes": [2, "single"],
+    "comma-spacing": [2, { "before": false, "after": true }],
+    "key-spacing": [2, { "beforeColon": false }],
+    "space-infix-ops": 2,
+    "prefer-const": 0,
+    "import/no-unresolved": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "for-direction": 2,
+    "no-undef": 0,
+    "no-console": 0,
+    "no-unused-vars": 0,
+    "no-dupe-args": 2,
+    "no-dupe-keys": 1,
+    "no-unreachable": 2,
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "no-useless-catch": 0,
+    "no-empty-pattern": 0,
+    "template-curly-spacing": ["error", "never"]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/*.{j,t}s?(x)",
+        "**/tests/unit/**/*.spec.{j,t}s?(x)"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}

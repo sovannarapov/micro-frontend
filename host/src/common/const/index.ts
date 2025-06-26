@@ -1,0 +1,6 @@
+const RESULT_CODES = {
+  SUCCESS_CODE: '0000',
+  SESSION_TIMEOUT: 'AUTH001',
+};
+
+export { RESULT_CODES };

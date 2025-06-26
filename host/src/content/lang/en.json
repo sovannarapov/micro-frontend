@@ -1,0 +1,8 @@
+{
+  "app.content": "Hello",
+  "menu.home": "Home",
+  "menu.join": "Join",
+  "menu.login": "Login",
+  "menu.guestbook": "Guestbook",
+  "message.user": "Welcome, {name}!"
+}

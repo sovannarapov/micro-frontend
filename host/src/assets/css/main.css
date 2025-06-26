@@ -1,0 +1,230 @@
+/* main */
+.main {
+  height: auto;
+}
+.main-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.main-top .prs-bg {
+  width: calc(100% - 450px);
+  height: 450px;
+  background: url('../images/main-cambo1.jpg') no-repeat top center;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.main-top .prs-box {
+  width: 420px;
+  margin-left: 30px;
+}
+.main-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.main-bottom .prs-box {
+  width: calc((100% - 480px) / 2);
+  margin-left: 30px;
+}
+.main-bottom .prs-box:first-child {
+  margin-left: 0;
+}
+
+.prs-box .m-title {
+  height: 100%;
+}
+.prs-box .m-title h2 {
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.prs-box ul {
+  padding: 20px;
+}
+.prs-box ul li {
+  display: flex;
+  align-items: center;
+  line-height: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.prs-box ul li:last-child {
+  margin-bottom: 0;
+}
+.prs-box ul li a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000;
+}
+.prs-box ul li:hover a {
+  color: #a59585 !important;
+}
+.prs-box .category {
+  display: inline-block;
+  min-width: 52px;
+  max-width: 100px;
+  margin-right: 10px;
+  padding: 5px 10px 1px;
+  text-align: center;
+  color: #a59585;
+  border: 1px solid #a59585;
+  border-radius: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.m-menu3 .category {
+  max-width: 130px;
+  width: 100%;
+}
+.m-menu2 ul li {
+  position: relative;
+  padding-left: 13px;
+}
+.m-menu2 ul li::before {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: #a59585;
+}
+.m-menu2 ul li span {
+  display: block;
+  font-weight: bold;
+  color: #fcaf17;
+}
+.m-menu3 {
+  width: 420px !important;
+}
+.m-menu3 .category {
+  min-width: 88px;
+}
+.main .calendar {
+  height: calc(100% - 50px);
+}
+.main .calendar .dp__menu {
+  border: 0;
+}
+.main .calendar .dp__calendar_header {
+  background: #e9e9e9;
+}
+
+.prs-box,
+.prs-todo {
+  border: 1px solid #e4e3e3;
+  border-top: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.prs-box .m-title h2,
+.prs-todo .title_area {
+  background: linear-gradient(to top, #a59585, #c5b4a4);
+}
+
+/* to do list */
+.prs-todo {
+  width: calc(100% - 450px);
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.prs-todo .title_area {
+  padding: 10px 15px;
+  height: auto;
+}
+.prs-todo .title_area h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.search-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 11px 15px 14px;
+  justify-content: space-between;
+  border-bottom: 1px dashed #cccccc;
+}
+.search-list li {
+  display: flex;
+}
+.search-list .bv-no-focus-ring {
+  display: flex;
+}
+.prs-todo .ds_grid {
+  height: calc(100% - 100px);
+  padding: 15px 20px;
+  flex: 1 0 auto;
+}
+.prs-todo .ds_grid .title {
+  font-weight: bold;
+  font-size: 17px;
+  color: #333;
+  padding: 5px 0 15px;
+  letter-spacing: 0;
+}
+.todo-list {
+  background-color: #f8f8f8;
+  border: 1px solid #e1e1e1;
+  border-top: 0;
+  float: left;
+  width: calc(50% - 5px);
+}
+.todo-list:last-child {
+  float: right;
+  width: calc(50% - 5px);
+}
+.todo-list li {
+  float: left;
+  width: 100%;
+  border-top: 1px solid #e1e1e1;
+  position: relative;
+  height: calc(280px / 4);
+}
+.todo-list li:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #e1e1e1;
+  height: 1px;
+  content: '';
+}
+.todo-list li a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  line-height: 1.2;
+  padding-left: 15px;
+  color: #444;
+  font-size: 15px;
+  border: 1px solid transparent;
+  overflow: hidden;
+  padding-right: 30px;
+  cursor: pointer;
+}
+.todo-list li:nth-child(even) a {
+  background-color: #f1f1f1;
+}
+.todo-list li a span {
+  position: absolute;
+  right: 15px;
+  font-size: 16px;
+  color: #ff6000;
+}
+.todo-list li a:hover {
+  border-color: #000;
+  color: #000;
+}
+.todo-list li a:hover span {
+  color: #ff0000;
+}
